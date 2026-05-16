@@ -35,7 +35,7 @@ uncle(X, Y)       :- parent(P, Y), sibling(X, P), male(X).
 aunt(X, Y)        :- parent(P, Y), sibling(X, P), female(X).
 cousin(X, Y)      :- parent(PX, X), parent(PY, Y), sibling(PX, PY), X \== Y.
 
-% --- Try these queries ---
+% --- queries ---
 % ?- grandparent(X, gichuhi).   -> kirombe, wambui
 % ?- grandchild(X, kirombe).    -> gichuhi, shiro, njeri, ngumo, kamau
 % ?- parent(X, gichuhi).        -> gichohi, mercy
